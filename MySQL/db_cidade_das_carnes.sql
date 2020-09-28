@@ -46,7 +46,12 @@ insert into tb_produto(peso_kg, prazo_validade, tipo_carne, codigoProduto_id) va
 insert into tb_produto(peso_kg, prazo_validade, tipo_carne, codigoProduto_id) values (11.10, '2020/11/11', "bovina", 1);
 insert into tb_produto(peso_kg, prazo_validade, tipo_carne, codigoProduto_id) values (18.30, '2020/10/27', "aves", 3);
 
-select * from tb_produto;
+-- Faça um select que retorne os Produtos com o valor maior do que 50 reais.
+
+select * from tb_categoria where valor > 50;
+
+-- Faça um select trazendo os Produtos com valor entre 3 e 60 reais.
+select * from tb_categoria where 3 > valor < 60;
 
 	
 
