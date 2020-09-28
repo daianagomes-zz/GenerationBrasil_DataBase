@@ -32,13 +32,9 @@ create table tb_produto(
 	foreign key (codigoProduto_id) references tb_categoria(id)
 );
 
-  
-select * from tb_produto;
-ALTER TABLE tb_produto DROP COLUMN data_validade ;
-select * from tb_produto;
 
-
-insert into tb_produto(peso, data_validade, 
+ALTER TABLE tb_produto CHANGE peso peso_kg decimal(10,2)  unsigned;
+select * from tb_produto;
 
 	
 
