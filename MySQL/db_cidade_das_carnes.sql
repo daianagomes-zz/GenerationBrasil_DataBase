@@ -36,5 +36,17 @@ create table tb_produto(
 ALTER TABLE tb_produto CHANGE peso peso_kg decimal(10,2)  unsigned;
 select * from tb_produto;
 
+
+insert into tb_produto(peso_kg, prazo_validade, tipo_carne, codigoProduto_id) values (13.60, '2020/10/21', "bovina", 1);
+insert into tb_produto(peso_kg, prazo_validade, tipo_carne, codigoProduto_id) values (11.20, '2020/11/12', "suina", 2);
+insert into tb_produto(peso_kg, prazo_validade, tipo_carne, codigoProduto_id) values (10.80, '2020/11/12', "aves", 3);
+insert into tb_produto(peso_kg, prazo_validade, tipo_carne, codigoProduto_id) values (9.80, '2020/10/15', "bovina", 1);
+insert into tb_produto(peso_kg, prazo_validade, tipo_carne, codigoProduto_id) values (19.60, '2020/11/10', "suina", 2);
+insert into tb_produto(peso_kg, prazo_validade, tipo_carne, codigoProduto_id) values (17.50, '2020/10/01', "suina", 2);
+insert into tb_produto(peso_kg, prazo_validade, tipo_carne, codigoProduto_id) values (11.10, '2020/11/11', "bovina", 1);
+insert into tb_produto(peso_kg, prazo_validade, tipo_carne, codigoProduto_id) values (18.30, '2020/10/27', "aves", 3);
+
+select * from tb_produto;
+
 	
 
