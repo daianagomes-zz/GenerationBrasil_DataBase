@@ -54,7 +54,11 @@ select * from tb_categoria where valor > 50;
 select * from tb_categoria where 3 > valor < 60;
 
 -- Faça um select utilizando LIKE buscando os Produtos com as letras CO.
-select * from tb_categoria where nome like "%CO%"
+select * from tb_categoria where nome like "%CO%";
+
+-- Faça um um select com Inner join entre tabela categoria e produto.
+select * from tb_categoria
+	inner join tb_produto on tb_produto.id = tb_produto.codigoProduto_id
 
 	
 
