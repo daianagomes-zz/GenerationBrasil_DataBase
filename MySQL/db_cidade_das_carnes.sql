@@ -58,7 +58,10 @@ select * from tb_categoria where nome like "%CO%";
 
 -- Faça um um select com Inner join entre tabela categoria e produto.
 select * from tb_categoria
-	inner join tb_produto on tb_produto.id = tb_produto.codigoProduto_id
+	inner join tb_produto on tb_produto.id = tb_produto.codigoProduto_id;
 
-	
+
+select tb_categoria.nome, tb_produto.tipo_carne from tb_categoria
+	inner join tb_produto on tb_produto.id = tb_produto.codigoProduto_id
+    where tb_produto.tipo_carne like "%suina%"
 
