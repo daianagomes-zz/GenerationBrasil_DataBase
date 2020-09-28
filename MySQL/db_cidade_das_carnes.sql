@@ -53,5 +53,8 @@ select * from tb_categoria where valor > 50;
 -- Faça um select trazendo os Produtos com valor entre 3 e 60 reais.
 select * from tb_categoria where 3 > valor < 60;
 
+-- Faça um select utilizando LIKE buscando os Produtos com as letras CO.
+select * from tb_categoria where nome like "%CO%"
+
 	
 
